@@ -7,6 +7,10 @@ This bot facilitates kit delivery on anarchy Minecraft servers like 2b2t, 6b6t, 
 To install the bot, simply run the following command:
 ```bash
 npm install
+```
 # Usage
 ## To run the bot, execute the following command:
+```bash
 node .
+```
+

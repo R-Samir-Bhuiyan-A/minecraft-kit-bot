@@ -8,13 +8,13 @@ This bot facilitates kit delivery on anarchy Minecraft servers like 2b2t, 6b6t, 
 
 The bot operates by facilitating kit delivery through both in-game whisper commands and Discord slash commands. Here's a breakdown of how it functions:
 
-1. **Saving Kits**: When a kit is saved either through a Discord slash command or an in-game whisper command, the bot records the chest location and all the items in the kit into the `chestData.json` file. This file acts as a database of saved kits, storing their respective chest locations and contents.
+1. **Saving Kits**: When a kit is saved either through a Discord slash command or an in-game whisper command, the bot records the chest location and items`chestData.json` file. This file acts as a database of saved kits, storing their respective chest locations and contents.
 
-2. **Ordering Kits**: Players can request kits through either Discord slash commands or in-game whisper commands. When a kit is requested, the bot navigates to the specified chest location saved in `chestData.json`, retrieves the items from the chest, and delivers them to the player. 
+2. **Ordering Kits**: Players can request kits through either Discord slash commands or in-game whisper commands. When a kit is requested, the bot navigates to the specified chest location saved in `chestData.json`, retrieves the items from the chest.
 
-3. **Special Handling for Specific Items**: If a kit contains special items like a `red_shulker_box`, the bot ensures that the chest is only filled with the specified item. This ensures that players receive exactly what they requested without any additional items.
+3. **Handling for Specific Items**: If a chest contains items like a `red_shulker_box`, their should be only `red_shulker_box` in the chest  This ensures that players receive exactly what they requested without any additional items.
 
-4. **TPA Request**: After delivering the items, the bot sends a TPA (teleport request) to the player. The player needs to accept the TPA request to claim the items. Once the request is accepted, the player can proceed to kill the bot to obtain the items. 
+4. **TPA Request**: the bot sends a TPA (teleport request) to the player. The player needs to accept the TPA request to claim the items. Once the request is accepted, the player can proceed to kill the bot to obtain the items. 
 
 5. **Bot Reset**: After delivering the items and completing the delivery process, the bot returns to its initial location, acting as a safeguard to prevent it from being left vulnerable in unknown locations. This ensures the bot's safety and enables it to continue facilitating kit deliveries efficiently.
 

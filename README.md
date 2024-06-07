@@ -20,7 +20,7 @@ After Node.js is installed, follow these steps:
 
 3. Visit `localhost:8080` in your web browser to set up the required environment variables (`IP`, `PORT`, `BOTNAME`, `PASSWORD`, `OWNER`, `VERSION`, `TOKEN`, `TOKEN2`, `GUILD_ID`, `CLIENT_ID`, `CLIENT_ID2`, `channelid`, `SERVER_PORT`). These variables are necessary for the bot to function properly.
 
-4. After filling out the `.env` file or using the web UI to configure the environment variables, navigate to the web UI and click "Add Command". Wait until the process completes and you see a success message indicating that the setup is done.
+4. **After filling out the `.env` file or using the web UI to configure the environment variables, navigate to the web UI and click "Add Command". Wait until the process completes and you see a success message indicating that the setup is done.**
 
 Once the setup is complete, you can start using the bot for kit delivery and other functions.
 

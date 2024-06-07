@@ -87,7 +87,6 @@ The bot also supports Discord slash commands for administrative actions. Availab
     
 
 
-## How the bot works
 
 ---
 

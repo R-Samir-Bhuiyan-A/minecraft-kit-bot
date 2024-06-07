@@ -1,0 +1,149 @@
+/* Base styles */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+  margin-top: 400px;
+  background-color: #121212;
+  color: #ffffff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  padding: 20px;
+}
+
+/* Container styles */
+.container {
+  background: #1e1e1e;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+  max-width: 800px;
+  width: 100%;
+  margin: 20px;
+}
+
+/* Header styles */
+h1 {
+  margin-bottom: 25px;
+  color: #ff6f61;
+  text-align: center;
+  font-size: 2em;
+}
+
+/* Form styles */
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+}
+
+label {
+  margin-bottom: 5px;
+  color: #bbbbbb;
+  font-size: 1em;
+}
+
+input[type="text"] {
+  padding: 12px;
+  border: 1px solid #444444;
+  border-radius: 5px;
+  background-color: #333333;
+  color: #ffffff;
+  font-size: 1em;
+  transition: border-color 0.3s;
+}
+
+input[type="text"]:focus {
+  border-color: #ff6f61;
+}
+
+input[type="text"]::placeholder {
+  color: #888888;
+}
+
+/* Button styles */
+button {
+  padding: 12px 20px;
+  background-color: #ff6f61;
+  border: none;
+  border-radius: 5px;
+  color: #ffffff;
+  font-size: 1em;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.3s;
+  align-self: center;
+  max-width: 200px;
+  margin: 10px;
+}
+
+button:hover {
+  background-color: #e65c50;
+  transform: translateY(-2px);
+}
+
+/* Button group styles */
+.button-group {
+  display: flex;
+  justify-content: space-between;
+}
+
+.action-button {
+  background-color: #4CAF50;
+}
+.action-button1 {
+  background-color: red;
+}
+
+.action-button:hover {
+  background-color: #45a049;
+}
+.action-button1:hover {
+  background-color: rgb(121, 5, 5);
+}
+
+
+/* Media queries */
+@media (max-width: 600px) {
+  .container {
+    padding: 20px;
+  }
+  body{
+    margin-top: 400px;
+  }
+
+  h1 {
+    font-size: 1.5em;
+  }
+
+  label {
+    font-size: 0.9em;
+  }
+
+  input[type="text"] {
+    font-size: 0.9em;
+  }
+
+  button {
+    font-size: 0.9em;
+  }
+
+  .button-group {
+    flex-direction: column;
+  }
+
+  .action-button {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+}

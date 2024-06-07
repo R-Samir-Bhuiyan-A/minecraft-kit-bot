@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bot Panel</title>
+  <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Bot Panel</h1>
+    <form action="/update" method="post">
+      <% for (const [key, value] of Object.entries(envVariables)) { %>
+        <div class="form-group">
+          <label for="<%= key %>"><%= key %>:</label>
+          <input type="text" id="<%= key %>" name="<%= key %>" value="<%= value %>" required>
+        </div>
+      <% } %>
+      <button type="submit">Update</button>
+    </form>
+    <div class="button-group">
+      <button id="deleteCommand" class="action-button1" onclick="deleteCommand()">Delete Command</button>
+      <button id="addCommand" class="action-button" onclick="addCommand()">Add Command</button>
+    </div>
+  </div>
+  <script>
+    function deleteCommand() {
+      fetch('/delete', { method: 'POST' })
+        .then(response => response.json())
+        .then(data => alert(data.message))
+        .catch(error => console.error('Error:', error));
+    }
+
+    function addCommand() {
+      fetch('/add', { method: 'POST' })
+        .then(response => response.json())
+        .then(data => alert(data.message))
+        .catch(error => console.error('Error:', error));
+    }
+  </script>
+</body>
+</html>

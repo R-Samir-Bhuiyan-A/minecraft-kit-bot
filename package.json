@@ -1,0 +1,27 @@
+{
+  "name": "Delivery_Bot",
+  "version": "1.0.0",
+  "main": "src/index.js",
+  "scripts": {
+    "start": "node src/index.js"
+  },
+  "author": "samirx69",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.20.2",
+    "chalk": "^5.3.0",
+    "discord.js": "^14.14.1",
+    "dotenv": "^16.4.5",
+    "ejs": "^3.1.10",
+    "express": "^4.19.2",
+    "mineflayer": "^4.20.1",
+    "mineflayer-auto-eat": "^3.3.6",
+    "mineflayer-blockfinder": "^0.0.7",
+    "mineflayer-collectblock": "^1.4.1",
+    "mineflayer-navigate": "^0.0.10",
+    "mineflayer-pathfinder": "^2.4.5",
+    "vec3": "^0.1.10"
+  },
+  "keywords": [],
+  "description": "This is a Bot uses /tpa to Transfer kits and items and have a install panel to get started "
+}

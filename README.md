@@ -23,5 +23,30 @@ node .
 - **Kit Management**: Save and manage kits through JSON files.
 - **Dark-Themed UI Dashboard**: Provides an advanced UI dashboard for administrative tasks.
 - **Compatibility**: Compatible with any Minecraft version supported by Mineflayer.
+## Discord Slash Commands
+
+The bot also supports Discord slash commands for administrative actions. Available commands are:
+
+- **/kit**
+  - **Description**: Admin kit command
+  - **Options**:
+    - `kitname`: Choose a kit
+    - `amount`: Amount of kits
+    - `username`: Username
+
+- **/order**
+  - **Description**: Order a kit
+  - **Options**:
+    - `kitname`: Choose a kit
+    - `username`: Username
+
+- **/savekit**
+  - **Description**: Save a kit
+  - **Options**:
+    - `kitname`: Name of the kit to save
+    - `x`: X coordinate
+    - `y`: Y coordinate
+    - `z`: Z coordinate
+    - `item`: Item to save in the kit
 
 

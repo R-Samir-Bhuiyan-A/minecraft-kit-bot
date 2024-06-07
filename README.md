@@ -4,10 +4,28 @@
 This bot facilitates kit delivery on anarchy Minecraft servers like 2b2t, 6b6t, and others. It allows for the easy delivery of predefined kits to players on demand, both in-game and through Discord.
 
 ## Installation
-To install the bot, simply run the following command:
-```bash
-npm install
-```
+To use this bot, ensure you have Node.js installed on your system. If not, you can download and install it from the [Node.js website](https://nodejs.org/).
+
+After Node.js is installed, follow these steps:
+
+1. Install the bot dependencies by running the following command in your terminal:
+    ```bash
+    npm install
+    ```
+
+2. Start the bot by running:
+    ```bash
+    node .
+    ```
+
+3. Visit `localhost:8080` in your web browser to set up the required environment variables (`IP`, `PORT`, `BOTNAME`, `PASSWORD`, `OWNER`, `VERSION`, `TOKEN`, `TOKEN2`, `GUILD_ID`, `CLIENT_ID`, `CLIENT_ID2`, `channelid`, `SERVER_PORT`). These variables are necessary for the bot to function properly.
+
+4. After filling out the `.env` file or using the web UI to configure the environment variables, navigate to the web UI and click "Add Command". Wait until the process completes and you see a success message indicating that the setup is done.
+
+Once the setup is complete, you can start using the bot for kit delivery and other functions.
+
+Note: Ensure you have two Discord bot tokens (`TOKEN` and `TOKEN2`) and a Discord server ID (`GUILD_ID`) ready before setting up the environment variables. Also, make sure to provide a valid `channelid` where bots will communicate, keeping it hidden from normal players for security purposes.
+
 # Usage
 ## To run the bot, execute the following command:
 ```bash

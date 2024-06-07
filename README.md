@@ -3,6 +3,9 @@
 ## Overview
 This bot facilitates kit delivery on anarchy Minecraft servers like 2b2t, 6b6t, and others. It allows for the easy delivery of predefined kits to players on demand, both in-game and through Discord.
 
+
+
+
 ## Installation
 To use this bot, ensure you have Node.js installed on your system. If not, you can download and install it from the [Node.js website](https://nodejs.org/).
 
@@ -71,5 +74,12 @@ The bot also supports Discord slash commands for administrative actions. Availab
 ---
 
 With its comprehensive set of features, the Mineflayer Kit Delivery Bot provides a seamless experience for managing kit delivery and administrative tasks in Minecraft servers. Enhance your server management capabilities today!
+
+
+
+---
+
+# Keywords
+2b2t kit delivery bot, 6b6t kit delivery bot, Minecraft kit delivery bot, Mineflayer bot, Minecraft server management, Minecraft kit management, Discord integration, Minecraft anarchy server, Whisper commands, Discord slash commands, JSON file management, Anarchy server management, Discord-controlled bot, Mineflayer bot for 2b2t, Discord-managed Minecraft bot, Anarchy server administration, Discord-controlled Mineflayer bot
 
 

@@ -13,4 +13,15 @@ npm install
 ```bash
 node .
 ```
+## Features
+
+- **In-Game Commands**: Players can whisper commands to request kits or perform other actions.
+  - **Whisper Command**: Players can whisper commands to the bot in-game to request kits or perform other actions. Available whisper commands are:
+    - `kit (kit name) (amount) (username)`: Request a kit delivery for a specified amount to the given username.
+    - `setkit (name) x y z (item)`: Save a kit with the specified name, coordinates, and item.
+- **Discord Integration**: Supports Discord slash commands for administrative actions.
+- **Kit Management**: Save and manage kits through JSON files.
+- **Dark-Themed UI Dashboard**: Provides an advanced UI dashboard for administrative tasks.
+- **Compatibility**: Compatible with any Minecraft version supported by Mineflayer.
+
 

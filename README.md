@@ -41,6 +41,7 @@ node .
 - **Kit Management**: Save and manage kits through JSON files.
 - **Dark-Themed UI Dashboard**: Provides an advanced UI dashboard for administrative tasks.
 - **Compatibility**: Compatible with any Minecraft version supported by Mineflayer.
+
 ## Discord Slash Commands
 
 The bot also supports Discord slash commands for administrative actions. Available commands are:
@@ -66,5 +67,9 @@ The bot also supports Discord slash commands for administrative actions. Availab
     - `y`: Y coordinate
     - `z`: Z coordinate
     - `item`: Item to save in the kit
+
+---
+
+With its comprehensive set of features, the Mineflayer Kit Delivery Bot provides a seamless experience for managing kit delivery and administrative tasks in Minecraft servers. Enhance your server management capabilities today!
 
 

@@ -1,9 +1,17 @@
 {
   "name": "Delivery_Bot",
   "version": "1.0.0",
+  "description": "This is a Bot that uses /tpa to transfer kits and items and has an install panel to get started",
   "main": "src/index.js",
   "scripts": {
-    "start": "node src/index.js"
+    "prestart": "npm install",
+    "start": "node src/index.js",
+    "build": "node server.js",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "stop": "pkill -f 'node src/index.js'",
+    "lint": "eslint .",
+    "clean": "rm -rf logs/*",
+    "restart": "npm run stop && npm run start"
   },
   "author": "samirx69",
   "license": "ISC",
@@ -22,6 +30,8 @@
     "mineflayer-pathfinder": "^2.4.5",
     "vec3": "^0.1.10"
   },
-  "keywords": [],
-  "description": "This is a Bot uses /tpa to Transfer kits and items and have a install panel to get started "
+  "devDependencies": {
+    "eslint": "^8.42.0"
+  },
+  "keywords": []
 }

@@ -29,9 +29,9 @@ After Node.js is installed, follow these steps:
     npm install
     ```
 
-2. Start the bot by running:
+2. Start The Setup
     ```bash
-    node .
+    npm run Build
     ```
 
 3. Visit `localhost:8080` in your web browser to set up the required environment variables (`IP`, `PORT`, `BOTNAME`, `PASSWORD`, `OWNER`, `VERSION`, `TOKEN`, `TOKEN2`, `GUILD_ID`, `CLIENT_ID`, `CLIENT_ID2`, `channelid`, `SERVER_PORT`). These variables are necessary for the bot to function properly.

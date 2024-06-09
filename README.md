@@ -47,6 +47,11 @@ Note: Ensure you have two Discord bot tokens (`TOKEN` and `TOKEN2`) and a Discor
 ```bash
 node .
 ```
+Or
+```bash
+npm run start
+```
+
 ## Features
 
 - **In-Game Commands**: Players can whisper commands to request kits or perform other actions.

@@ -1,16 +1,16 @@
 # Mineflayer Kit Delivery Bot
 
 ## Overview
-This bot facilitates kit delivery on anarchy Minecraft servers like 2b2t, 6b6t, and others. It allows for the easy delivery of predefined kits to players on demand, both in-game and through Discord.
+This bot facilitates kit delivery on anarchy Minecraft servers like 2b2t, 6b6t, and others. It allows for the easy delivery of predefined kits to players on demand, both in-game and through Discord by api.
 
 
 # How the bot works
 
-The bot operates by facilitating kit delivery through both in-game whisper commands and Discord slash commands. Here's a breakdown of how it functions:
+The bot operates by facilitating kit delivery through both web ui and Discord slash commands. Here's a breakdown of how it functions:
 
-1. **Saving Kits**: When a kit is saved either through a Discord slash command or an in-game whisper command, the bot records the chest location and items`chestData.json` file. This file acts as a database of saved kits, storing their respective chest locations and contents.
+1. **Saving Kits**: When a kit is saved either through a Discord slash command or web ui, the bot records the chest location and items`chestData.json` file. This file acts as a database of saved kits, storing their respective chest locations and contents.
 
-2. **Ordering Kits**: Players can request kits through either Discord slash commands or in-game whisper commands. When a kit is requested, the bot navigates to the specified chest location saved in `chestData.json`, retrieves the items from the chest.
+2. **Ordering Kits**: Players can request kits through either Discord slash commands or web ui or api . When a kit is requested, the bot navigates to the specified chest location saved in `chestData.json`, retrieves the items from the chest.
 
 3. **Handling for Specific Items**: If a chest contains items like a `red_shulker_box`, their should be only `red_shulker_box` in the chest  This ensures that players receive exactly what they requested without any additional items.
 

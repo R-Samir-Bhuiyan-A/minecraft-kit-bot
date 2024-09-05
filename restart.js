@@ -41,6 +41,6 @@ app.post('/stop', (req, res) => {
     });
 });
 
-app.listen(25567, () => {
-    console.log('Server is running on port 25567');
+app.listen(process.env.WS_PORT, () => {
+    console.log(`Server is running on port ${process.env.WS_PORT}`);
 });

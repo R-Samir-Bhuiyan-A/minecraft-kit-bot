@@ -83,6 +83,16 @@
             background-color: #3700b3;
         }
 
+        .error-message {
+            background-color: #f44336;
+            color: #ffffff;
+            padding: 10px;
+            border-radius: 4px;
+            margin-bottom: 15px;
+            text-align: center;
+            font-size: 14px;
+        }
+
         @media (max-width: 600px) {
             .card {
                 padding: 15px;
@@ -102,6 +112,10 @@
     <div class="container">
         <div class="card">
             <h2>Delivery Bot Panel</h2>
+            <% if (session && session.errorMessage) { %>
+                <div class="error-message"><%= session.errorMessage %></div>
+                <% session.errorMessage = null; %> <!-- Clear the message after displaying -->
+            <% } %>
             <form action="/login" method="POST">
                 <div class="form-group">
                     <label for="username">Username</label>

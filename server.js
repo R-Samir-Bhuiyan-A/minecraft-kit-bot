@@ -80,18 +80,19 @@ app.post('/update', (req, res) => {
   res.redirect('/');
 });
 
-
 app.get('/login', (req, res) => {
-  res.render('login'); // Render the login page
+  res.render('login', { session: req.session }); // Pass session object to the view
 });
+
 
 app.post('/login', (req, res) => {
   const { username, password } = req.body;
   // Simple username/password check
-  if (username === 'admin' && password === 'password') { // Change credentials as needed
+  if (username === process.env.UI_USER && password === process.env.UI_PASSWORD) { // Change credentials as needed
     req.session.loggedIn = true;
     res.redirect('/');
   } else {
+    req.session.errorMessage = 'Password incorrect'; // Set error message
     res.redirect('/login');
   }
 });
